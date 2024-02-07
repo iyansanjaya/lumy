@@ -1,0 +1,4 @@
+baseURL = 'https://lumy.li/'
+languageCode = 'id-id'
+title = 'Lumy Shortlink'
+theme = 'lumisas'
