@@ -1,13 +1,13 @@
 backend:
   name: github
   repo: iyansanjaya/lumy # Path to your GitHub repository
-  publish_mode: editorial_workflow
   auth_scope: repo # this is needed to fork the private repo
   open_authoring: true
   branch: master # Branch to update (optional; defaults to master)
 
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
 
 collections:
   - name: "shortlink" # Used in routes, e.g., /admin/collections/blog
