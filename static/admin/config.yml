@@ -11,7 +11,6 @@ publish_mode: editorial_workflow
 
 collections:
   - name: "shortlink" # Used in routes, e.g., /admin/collections/blog
-    identifier_field: identifier
     label: "Shortlink" # Used in the UI
     folder: "/content/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
