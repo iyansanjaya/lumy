@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: iyansanjaya/lumy # Path to your GitHub repository
   branch: master # Branch to update (optional; defaults to master)
 
 media_folder: static/img
