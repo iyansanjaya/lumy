@@ -22,3 +22,4 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Short Link", name: "url", widget: "string"}
       - {label: "Redirect Link", name: "linktogo", widget: "string"}
+        comment: 'This is a multiline\ncomment'
