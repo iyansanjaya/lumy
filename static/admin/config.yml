@@ -8,6 +8,7 @@ backend:
 media_folder: static/img
 public_folder: /img
 publish_mode: editorial_workflow
+logo_url: https://lumy.li/img/logo.webp
 
 collections:
   - name: "shortlink" # Used in routes, e.g., /admin/collections/blog
