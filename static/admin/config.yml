@@ -5,7 +5,11 @@ backend:
   open_authoring: true
   branch: master # Branch to update (optional; defaults to master)
 
-media_folder: static/img
+# media_folder: static/img
+media_library:
+  name: uploadcare
+  config:
+    publicKey: YOUR_UPLOADCARE_PUBLIC_KEY
 public_folder: /img
 publish_mode: editorial_workflow
 logo_url: https://lumy.li/imgsafe/logo.webp
