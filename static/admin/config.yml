@@ -10,7 +10,7 @@ backend:
     delete: Delete {{collection}} “{{slug}} - {{author-login}}”
     uploadMedia: Upload “{{path}} - {{author-login}}”
     deleteMedia: Delete “{{path}} - {{author-login}}”
-    openAuthoring: '{{message}} - {{author-login}}'
+    openAuthoring: '{{message}}'
 
 # media_folder: static/img
 media_library:
