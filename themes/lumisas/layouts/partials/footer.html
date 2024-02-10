@@ -2,16 +2,16 @@
     <div class="horizontal-line"></div>
     <div class="footer-content">
         <div class="one">
-            <p>Open-source MIT Licensed</p><div class="vertikal-line2"></div> <a href="https://lumidice.com">Lumidice Store</a> <div class="vertikal-line2"></div> <a href="https://bio.iyansanjaya.com">Iyan Sanjaya</a>
+            <p>Open-source</p><div class="vertikal-line2"></div> <a href="https://lumidice.com">Lumidice Store</a>
         </div>
         <div class="two">
-            <p>Copyright © {{ now.Year }} LumY App</p>
+            <p>Copyright © {{ now.Year }} LumY Shortlink</p>
         </div>
     </div>
 </div>
 
+<!-- HEADER -->
 <script>
-    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
     window.onscroll = function() {scrollFunction()};
     
     function scrollFunction() {
@@ -36,7 +36,9 @@
         document.getElementById("myNav").style.height = "0%";
     }
 </script>
+<!-- END HEADER -->
 
+<!-- DECAPCMS -->
 <script>
     const anchorTag = document.getElementById("login");
     const outputToken = document.getElementById("output-token");
@@ -79,3 +81,4 @@
         .then((response) => JSON.stringify(response));
     }
 </script>
+<!-- END DECAPCMS -->
