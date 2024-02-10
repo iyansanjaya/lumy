@@ -4,6 +4,13 @@ backend:
   auth_scope: repo # this is needed to fork the private repo
   open_authoring: true
   branch: master # Branch to update (optional; defaults to master)
+  commit_messages:
+    create: Create {{collection}} “{{slug}} - {{author-login}}”
+    update: Update {{collection}} “{{slug}} - {{author-login}}”
+    delete: Delete {{collection}} “{{slug}} - {{author-login}}”
+    uploadMedia: Upload “{{path}} - {{author-login}}”
+    deleteMedia: Delete “{{path}} - {{author-login}}”
+    openAuthoring: '{{message}} - {{author-login}}'
 
 # media_folder: static/img
 media_library:
