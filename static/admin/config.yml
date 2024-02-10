@@ -24,4 +24,5 @@ collections:
       preview: false
     fields: # The fields for each document, usually in front matter
       - {label: "Short Link", name: "url", widget: "string", hint: "Contoh pengisian shortlink: **iyan**. *Jangan gunakan lumy.li lagi*, cukup masukan shortlink yang ingin Anda gunakan. Nantinya jika shortlink sudah ditinjau, maka link akan menjadi *lumy.li/iyan* secara otomatis."}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Link yang dituju", name: "linktogo", widget: "string", hint: "Contoh link yang dituju: https://instagram.com/iyannsanjaya"}
