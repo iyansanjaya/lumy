@@ -242,6 +242,7 @@ main .section-one .left p {
 
 main .section-one .left button {
     margin-top: 25px;
+    width: 100%;
 }
 
 main .section-two {
