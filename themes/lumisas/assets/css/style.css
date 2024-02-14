@@ -323,6 +323,46 @@ main .section-two .card p {
     color: var(--color-black-two);
 }
 
+main .section-three {
+    display: flex;
+    margin: 0 90px 0 90px;
+    padding-top: 25px;
+}
+
+main .section-three a {
+    width: 100%;
+}
+
+main .section-three .card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 30px 50px;
+    border-radius: 12px;
+    background-color: var(--color-light-gray);
+    transition: 0.3s;
+}
+
+main .section-three .card .text {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    color: var(--color-black);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+main .section-three .card .text p.top {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+main .section-three .card:hover {
+    cursor: pointer;
+    background-color: var(--color-gray);
+}
+
 @media screen and (max-width: 800px) {
     main {
         padding-bottom: 160px;
@@ -368,6 +408,10 @@ main .section-two .card p {
         padding-top: 40px;
         flex-wrap: wrap;
         margin: 0;
+    }
+
+    main .section-three {
+        display: none;
     }
 }
 /* END MAIN */
