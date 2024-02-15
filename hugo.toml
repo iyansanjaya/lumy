@@ -2,3 +2,33 @@ baseURL = 'https://lumy.li/'
 languageCode = 'id-id'
 title = 'Lumy Shortlink'
 theme = 'lumisas'
+
+[params]
+    Description = 'Lumy Shortlink adalah website shortlink gratis seumur hidup yang bisa digunakan oleh semua orang tanpa perlu takut terkena limit dan semacamnya.'
+
+[sitemap]
+    changefreq = 'daily'
+    filename = 'sitemap.xml'
+    priority = 0.8
+
+[related]
+    includeNewer = false
+    threshold = 80
+    toLower = false
+[[related.indices]]
+    name = 'keywords'
+    weight = 100
+[[related.indices]]
+    name = 'date'
+    weight = 10
+
+# Default site wide settings
+[build.processing]
+    skip_processing = true
+
+# Branch specific settings
+[context.branch-name.processing]
+    skip_processing = false
+[context.branch-name.processing.css]
+    bundle = false
+    minify = true

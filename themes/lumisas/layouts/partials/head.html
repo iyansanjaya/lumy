@@ -4,6 +4,52 @@
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
 
+<link rel="icon" type="image/x-icon" href="/img/logo-lumy.svg">
+
+{{ if .Description }}
+<meta name="description" content="{{ .Description }}">
+{{ else if eq .Kind "section" }}
+<meta name="description" content="{{.Summary}}">
+{{ else }}
+<meta name="description" content="{{ .Site.Params.Description }}">
+{{ end }}
+
+<!-- SEO Friendly -->
+<!-- Facebook Metadata Start -->
+<meta property="og:title" content="{{.Title}}" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="id_ID" />
+{{ if .Description }}
+<meta property="og:description" content="{{ .Description }}" />
+{{ else if eq .Kind "section" }}
+<meta property="og:description" content="{{.Summary}}" />
+{{ else }}
+<meta property="og:description" content="{{ .Site.Params.Description }}" />
+{{ end }}
+<meta property="og:url" content="{{.Permalink}}" />
+{{ if .IsHome }}
+<meta property="og:image" content="https://lumy.li/img/lumy-shortlink-banner.webp" />
+{{ else }}
+<meta property="og:image" content="https://lumy.li{{.Params.featured_image}}" />
+{{ end }}
+<!-- Twitter Metadata Start -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@lumidice" />
+<meta name="twitter:title" content="{{.Title}}" />
+{{ if .Description }}
+<meta name="twitter:description" content="{{ .Description }}" />
+{{ else if eq .Kind "section" }}
+<meta name="twitter:description" content="{{.Summary}}" />
+{{ else }}
+<meta name="twitter:description" content="{{ .Site.Params.Description }}" />
+{{ end }}
+{{ if .IsHome }}
+<meta name="twitter:image" content="https://lumy.li/img/lumy-shortlink-banner.webp" />
+{{ else }}
+<meta name="twitter:image" content="https://lumy.li{{.Params.featured_image}}" />
+{{ end }}
+<!-- Twitter Metadata End -->
+
 <!-- Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
