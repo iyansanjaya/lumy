@@ -11,14 +11,17 @@
     <!-- Include the script that builds the page and powers Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
+    <!-- Author Data when Post -->
     <script>
-      cms.registerEventListener({
-      name: "preSave",
-      handler: ({ author, entry }) => {
-        return entry.get("data").set("author", author);
-      },
-    });
+      CMS.registerEventListener({
+        name: "preSave",
+        handler: ({ author, entry }) => {
+          return entry.get("data").set("author", author);
+        },
+      });
     </script>
+    <!-- END Author Data when Post -->
+
     <script>
         const anchorTag = document.getElementById("login");
         const outputToken = document.getElementById("output-token");
