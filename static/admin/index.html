@@ -12,6 +12,14 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
     <script>
+      cms.registerEventListener({
+      name: "preSave",
+      handler: ({ author, entry }) => {
+        return entry.get("data").set("author", author);
+      },
+    });
+    </script>
+    <script>
         const anchorTag = document.getElementById("login");
         const outputToken = document.getElementById("output-token");
         const outputEmail = document.getElementById("output-email");

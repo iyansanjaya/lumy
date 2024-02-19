@@ -33,3 +33,4 @@ collections:
       - {label: "Short Link", name: "url", widget: "string", hint: "Contoh pengisian shortlink: **iyan** (tidak ada batas jumlah huruf). *Jangan gunakan lumy.li lagi di depan shortlink*, cukup masukan shortlink yang ingin Anda gunakan. Nantinya jika shortlink sudah ditinjau, maka secara otomatis akan menjadi *lumy.li/iyan*."}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Link yang dituju", name: "linktogo", widget: "string", hint: "Contoh link yang dituju: https://instagram.com/iyannsanjaya | Waktu proses peninjuan paling lama 1x24 jam."}
+      - { label: "Author", name: "author", widget: "hidden", default: "" }
