@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ .Title }}</title>
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/vidstack@^1.0.0/player/styles/default/theme.min.css"
+/>
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/vidstack@^1.0.0/player/styles/default/layouts/video.min.css"
+/>
+<style>
+body {
+    margin: 0;
+    background-color: #e6e6e6;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  color: white;
+  width: 1000px;
+}
+
+@media screen and (max-width: 800px) {
+    .flex-container {
+        padding: 10px;   
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div>
+    {{ .Content }}
+  </div>
+</div>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/vidstack@^1.0.0/cdn/with-layouts/vidstack.js"
+  type="module"
+></script>
+</body>
+</html>
+
+
